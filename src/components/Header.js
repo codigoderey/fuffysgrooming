@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 
 function Header() {
-	const handleActive = (e) => {
-		document.querySelectorAll(".main-menu ul li").forEach((el) => {
-			el.classList.remove("active");
-		});
-		e.target.parentNode.classList += " active";
-	};
+	// const handleActive = (e) => {
+	// 	document.querySelectorAll(".main-menu ul li").forEach((el) => {
+	// 		el.classList.remove("active");
+	// 	});
+	// 	e.target.parentNode.classList += " active";
+	// };
 	useEffect(() => {
 		//SubMenu Dropdown Toggle
 		if ($(".menu-area li.menu-item-has-children ul").length) {
@@ -83,17 +83,7 @@ function Header() {
 									</li>
 									<li>
 										<a href="/#">
-											<i className="fab fa-twitter" />
-										</a>
-									</li>
-									<li>
-										<a href="/#">
 											<i className="fab fa-instagram" />
-										</a>
-									</li>
-									<li>
-										<a href="/#">
-											<i className="fab fa-linkedin-in" />
 										</a>
 									</li>
 								</ul>
@@ -106,9 +96,9 @@ function Header() {
 				<div className="container custom-container">
 					<div className="row">
 						<div className="col-12">
-							<div className="mobile-nav-toggler">
+							{/* <div className="mobile-nav-toggler">
 								<i className="fas fa-bars" />
-							</div>
+							</div> */}
 							<div className="menu-wrap">
 								<nav className="menu-nav show">
 									<div className="logo">
@@ -116,7 +106,7 @@ function Header() {
 											<img src="img/logo/logo.png" alt="" />
 										</Link>
 									</div>
-									<div className="navbar-wrap main-menu d-none d-lg-flex">
+									{/* <div className="navbar-wrap main-menu d-none d-lg-flex">
 										<ul className="navigation">
 											<li className="active">
 												<Link to="/" onClick={(e) => handleActive(e)}>
@@ -129,119 +119,16 @@ function Header() {
 												</Link>
 											</li>
 											<li>
-												<Link to="/shop" onClick={(e) => handleActive(e)}>
-													Shop
-												</Link>
-											</li>
-											<li>
-												<Link to="/adoption" onClick={(e) => handleActive(e)}>
-													Adoption
-												</Link>
-											</li>
-											<li>
-												<Link to="/breeder" onClick={(e) => handleActive(e)}>
-													Breeder
-												</Link>
-											</li>
-											<li className="menu-item-has-children">
-												<Link to="/blogs" onClick={(e) => handleActive(e)}>
-													Blog
-												</Link>
-											</li>
-											<li>
 												<Link to="/contacts" onClick={(e) => handleActive(e)}>
-													contacts
+													Contacto
 												</Link>
 											</li>
 										</ul>
-									</div>
-									<div className="header-action d-none d-md-block">
-										<ul>
-											<li className="header-search">
-												<a href="/#">
-													<i className="flaticon-search" />
-												</a>
-											</li>
-											<li className="header-shop-cart">
-												<a href="/#">
-													<i className="flaticon-shopping-bag" />
-													<span>2</span>
-												</a>
-												<ul className="minicart">
-													<li className="d-flex align-items-start">
-														<div className="cart-img">
-															<a href="/#">
-																<img src="img/product/cart_p01.jpg" alt="" />
-															</a>
-														</div>
-														<div className="cart-content">
-															<h4>
-																<a href="/#">The King Charles Spaniel</a>
-															</h4>
-															<div className="cart-price">
-																<span className="new">$229.9</span>
-																<span>
-																	<del>$229.9</del>
-																</span>
-															</div>
-														</div>
-														<div className="del-icon">
-															<a href="/#">
-																<i className="far fa-trash-alt" />
-															</a>
-														</div>
-													</li>
-													<li className="d-flex align-items-start">
-														<div className="cart-img">
-															<a href="/#">
-																<img src="img/product/cart_p02.jpg" alt="" />
-															</a>
-														</div>
-														<div className="cart-content">
-															<h4>
-																<a href="/#">The Labrador Retriever</a>
-															</h4>
-															<div className="cart-price">
-																<span className="new">$229.9</span>
-																<span>
-																	<del>$229.9</del>
-																</span>
-															</div>
-														</div>
-														<div className="del-icon">
-															<a href="/#">
-																<i className="far fa-trash-alt" />
-															</a>
-														</div>
-													</li>
-													<li>
-														<div className="total-price">
-															<span className="f-left">Total:</span>
-															<span className="f-right">$239.9</span>
-														</div>
-													</li>
-													<li>
-														<div className="checkout-link">
-															<a href="/#">Shopping Cart</a>
-															<a className="black-color" href="/#">
-																Checkout
-															</a>
-														</div>
-													</li>
-												</ul>
-											</li>
-											<li className="header-btn">
-												<Link to="/adoption" className="btn">
-													Adopt Here{" "}
-													<img src="img/icon/w_pawprint.png" alt="" />
-												</Link>
-											</li>
-										</ul>
-									</div>
+									</div> */}
 								</nav>
 							</div>
 
-							<div className="mobile-menu">
+							{/* <div className="mobile-menu">
 								<nav className="menu-box">
 									<div className="close-btn">
 										<i className="fas fa-times" />
@@ -256,17 +143,7 @@ function Header() {
 										<ul className="clearfix">
 											<li>
 												<a href="/#">
-													<span className="fab fa-twitter" />
-												</a>
-											</li>
-											<li>
-												<a href="/#">
 													<span className="fab fa-facebook-square" />
-												</a>
-											</li>
-											<li>
-												<a href="/#">
-													<span className="fab fa-pinterest-p" />
 												</a>
 											</li>
 											<li>
@@ -274,15 +151,10 @@ function Header() {
 													<span className="fab fa-instagram" />
 												</a>
 											</li>
-											<li>
-												<a href="/#">
-													<span className="fab fa-youtube" />
-												</a>
-											</li>
 										</ul>
 									</div>
 								</nav>
-							</div>
+							</div> */}
 							<div className="menu-backdrop" />
 						</div>
 					</div>
@@ -291,39 +163,6 @@ function Header() {
 					className="header-shape"
 					style={{ backgroundImage: "url('img/bg/header_shape.png')" }}
 				/>
-			</div>
-
-			<div
-				className="search-popup-wrap"
-				tabIndex={-1}
-				role="dialog"
-				aria-hidden="true">
-				<div className="search-close">
-					<span>
-						<i className="fas fa-times" />
-					</span>
-				</div>
-				<div className="search-wrap text-center">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<h2 className="title">... Search Here ...</h2>
-								<div className="search-form">
-									<form>
-										<input
-											type="text"
-											name="search"
-											placeholder="Type keywords here"
-										/>
-										<button className="search-btn">
-											<i className="fas fa-search" />
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</header>
 	);

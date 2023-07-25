@@ -1,41 +1,30 @@
-import React from 'react';
-import MainSlider from '../components/MainSlider';
-import Find from '../components/Find'
-import Counter from '../components/Counter'
-import Adoption from '../components/Adoption'
-import BreedServices from '../components/BreedServices'
-import Faq from '../components/Faq'
-import Brand from '../components/Brand'
-import AdoptionShop from '../components/AdoptionShop'
-import Testimonial from '../components/Testimonial'
-import Newsletter from '../components/NewsLetter'
-import BlogsHome from '../components/BlogsHome'
-
-
-
+import React from "react";
+import MainSlider from "../components/MainSlider";
+import Counter from "../components/Counter";
+import Adoption from "../components/Adoption";
+import BreedServices from "../components/BreedServices";
+import Testimonial from "../components/Testimonial";
+// import Faq from "../components/Faq";
+// import Brand from "../components/Brand";
+// import AdoptionShop from "../components/AdoptionShop";
+// import Newsletter from "../components/NewsLetter";
+// import BlogsHome from "../components/BlogsHome";
 
 function Home() {
-
-
-  return (
-
-	
-		  <main>
-				<MainSlider/>
-				<Find/>
-				<Counter/>
-				<Adoption/>
-				<BreedServices/>
-				<Faq afterElment="faq-area"/>
-				<Brand/>
-				<AdoptionShop/>
-				<Testimonial/>
-				<BlogsHome/>
-				<Newsletter/>
-				
+	return (
+		<main>
+			<MainSlider />
+			<Counter />
+			<Adoption />
+			<BreedServices />
+			<Testimonial />
+			{/* <Faq afterElment="faq-area" /> */}
+			{/* <Brand /> */}
+			{/* <AdoptionShop /> */}
+			{/* <BlogsHome /> */}
+			{/* <Newsletter /> */}
 		</main>
-	  
-  )
+	);
 }
 
 export default Home;
