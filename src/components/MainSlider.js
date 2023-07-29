@@ -55,19 +55,6 @@ function MainSlider() {
                                                 perros.
                                             </p>
                                         </div>
-                                        <Link
-                                            to='/doglist'
-                                            className='btn'
-                                            data-animation='fadeInUpBig'
-                                            data-delay='.6s'
-                                            data-duration='1.2s'
-                                        >
-                                            Aprende más...{' '}
-                                            <img
-                                                src='img/icon/w_pawprint.png'
-                                                alt=''
-                                            />
-                                        </Link>
                                     </div>
                                 </div>
                             </div>
